@@ -1,2 +1,1 @@
-print(123)
-print('hi')
+print('hello')

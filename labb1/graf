@@ -11,13 +11,14 @@ black = 0
 #           1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7
 grafic = f''
 
+
 def coordx(x):
     return f'{CSI}{x}G'
 
 
 for y in range(9, 0, -1):
     if y != 1:
-        grafic += f'{coordx(0)}{y}|{coordx((3//y)+ 3)}*\n'
+        grafic += f'{coordx(0)}{y}|{coordx((3 // y) + 3)}*\n'
     else:
         grafic += f'{coordx(0)}{y}|{coordx((3 // y) + 3)}************************************************\n'
 grafic += f'{coordx(0)}0----------------------------------------------------'

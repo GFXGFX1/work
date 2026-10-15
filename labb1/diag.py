@@ -12,7 +12,7 @@ green = 10
 yellow = 11
 blue = 12
 
-a = open('seq.txt').readlines()
+a = open('testedseq.txt').readlines()
 q = []
 for i in a:
     q.append(float(i[:-1]))

@@ -53,3 +53,4 @@ for y in range(20, 0, -1):
     diag += f'{y * 5 if y != 1 else ' 5'}%|_________{a}{R}______{b}{R}_________\n'
 diag += f'   |         [-3:3]       Other\n'
 print(diag)
+

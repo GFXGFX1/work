@@ -22,8 +22,8 @@ def coordx(x):
 
 for y in range(9, 0, -1):
     if y != 1:
-        grafic += f'{coordx(0)}{y}|{coordx((3 // y) + 3)}{draw(red, 1)}{R}\n'
+        grafic += f'{coordx(0)}{y}|{coordx((int((3 / y)+ 0.5)) + 3)}{draw(red, 1)}{R}\n'
     else:
-        grafic += f'{coordx(0)}{y}|{coordx((3 // y) + 3)}{draw(red, 100)}{R}\n'
+        grafic += f'{coordx(0)}{y}|{coordx((int(3 / y)) + 3)}{draw(red, 100)}{R}\n'
 grafic += f'{coordx(0)}0----------------------------------------------------'
 print(grafic)

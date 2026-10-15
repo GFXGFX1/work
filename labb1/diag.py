@@ -12,7 +12,8 @@ green = 10
 yellow = 11
 blue = 12
 
-a = open('testedseq.txt').readlines()
+with open ('testedseq.txt') as seq:
+    a = seq.readlines()
 q = []
 for i in a:
     q.append(float(i[:-1]))
@@ -53,4 +54,6 @@ for y in range(20, 0, -1):
     diag += f'{y * 5 if y != 1 else ' 5'}%|_________{a}{R}______{b}{R}_________\n'
 diag += f'   |         [-3:3]       Other\n'
 print(diag)
+
+seq.close()
 
